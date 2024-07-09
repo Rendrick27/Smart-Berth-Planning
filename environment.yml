@@ -17,6 +17,5 @@ dependencies:
   - scipy = 1.11.1
   - seaborn = 0.12.2
   - scikit-learn = 1.3.0
-  - scipy = 1.11.1
 
   # Latex https://miktex.org/download
