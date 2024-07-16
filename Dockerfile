@@ -1,4 +1,5 @@
-FROM jupyter/pyspark-notebook:x86_64-ubuntu-22.04
+#Base image
+FROM jupyter/scipy-notebook:x86_64-python-3.11.6
 
 # Install dependencies
 RUN pip install geopandas==0.13.0
@@ -13,5 +14,6 @@ RUN pip install scipy==1.11.1
 RUN pip install seaborn==0.12.2
 RUN pip install scikit-learn==1.3.0
 
+#Create dir
 WORKDIR /nexus
 COPY . /nexus
